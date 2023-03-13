@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { Fragment } from "react";
+import HomeHeader from "@/components/HomeHeader";
 
 const Home = () => {
   return (
-    <div className='text-red-600'>Home</div>
-  )
-}
+    <Fragment>
+      <HomeHeader />
+    </Fragment>
+  );
+};
 
-export default Home
+export default Home;
