@@ -12,13 +12,13 @@ const Home = () => {
       {/* BODY */}
       <div className="flex flex-col items-center mt-24">
         <Image
+          alt="google logo"
           width="300"
           height="100"
           src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"
         />
 
-
-        <HomeSearch/>
+        <HomeSearch />
       </div>
     </Fragment>
   );
