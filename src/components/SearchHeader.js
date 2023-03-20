@@ -12,6 +12,7 @@ const SearchHeader = () => {
       <div className="flex w-full p-6 items-center justify-between ">
         <Link href={"/"}>
           <Image
+            alt="searchHeader Image tag"
             width="120"
             height="40"
             src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"
