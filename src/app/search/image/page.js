@@ -16,7 +16,7 @@ const ImageSearchPage = async ({ searchParams }) => {
   );
 
   if (!res.ok) {
-    console.log(response);
+    console.log(res);
     throw new Error("Something went wrong");
   }
 
