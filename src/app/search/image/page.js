@@ -3,11 +3,18 @@ import Link from "next/link";
 import ImageSearchResults from "@/components/ImageSearchResults";
 
 const ImageSearchPage = async ({ searchParams }) => {
+
+const startIndex=searchParams.start|| "1"
+
+
   await new Promise((resolve) => {
     return setTimeout(resolve, 10000);
   });
+
+
+
   const res = await fetch(
-    ` https://www.googleapis.com/customsearch/v1?key=${process.env.GOOGLE_API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image`
+    ` https://www.googleapis.com/customsearch/v1?key=${process.env.GOOGLE_API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image&start=${startIndex}`
   );
 
   const data = await res.json();
