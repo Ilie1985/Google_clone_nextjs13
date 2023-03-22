@@ -1,3 +1,5 @@
+export const dynamic= "force-dynamic"
+
 import React, { Fragment } from "react";
 import Link from "next/link";
 import WebSearchResults from "@/components/WebSearchResults";
