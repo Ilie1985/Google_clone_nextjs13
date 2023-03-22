@@ -17,7 +17,7 @@ const WebSearchPage = async ({ searchParams }) => {
 
 
 
-  if (!response.ok) {
+  if (!res.ok) {
     console.log(response);
     throw new Error("Something went wrong");
   }
