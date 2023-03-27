@@ -9,7 +9,7 @@ const Home = () => {
       {/* HEADER */}
       <HomeHeader />
 
-      {/* BODY */}
+    
       <div className="flex flex-col items-center mt-24">
         <Image
           alt="google logo"
